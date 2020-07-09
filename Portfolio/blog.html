@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">   
+    <link rel="stylesheet" href="css/style.css">   
+    <title>About Me</title>
+</head>
+<body>
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="primary"><i class="fa fa-id-card"></i> Shreyas</span> Inamdar
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div> 
+    </header>
+    <main>
+       
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="./image_resources/blog/person-holding-a-burning-news-paper-close-up-photography-2538122.jpg" alt=""></img>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-dark1">
+                         <h2 bg-light>Who am I?</h2>
+                         <p class="meta"> 
+                             <i class="fas fa-user"></i> Posted by <strong>Shreyas Inamdar</strong> | 2 July 2020
+                         </p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, 
+                            quis. Eveniet laboriosam distinctio ut debitis, consecte dignissimos 
+                            corrupti perspiciatis saepe?
+                         </p>
+                         <a href="post.html" class="btn btn-dark1 btn-outline1">
+                            Read More
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if(!scrolled){
+                    navbar.style.transform = 'translateY(-70px)';
+                 }
+                 setTimeout(function() {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                 }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+</html>

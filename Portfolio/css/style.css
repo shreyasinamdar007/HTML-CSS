@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Piedra&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero h1, h2 {
+    font-weight: 375;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #15afca 2px solid;
+
+}
+
+.navbar ul{
+    display: flex;
+
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+.hero {
+    background: url('../image_resources/joshua-earle-C6duwascOEA-unsplash.jpg') no-repeat center center/cover ;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1{
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero .content p{
+    font-size: 35px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ .hero::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0,0,0,0.7);
+ }
+
+ .hero * {
+     z-index: 10;
+ }
+
+ .hero.blog {
+     background: url('../image_resources/conor-samuel-fDFh5TJNKJA-unsplash.jpg') no-repeat center center/cover;
+     height: 30vh;
+ }
+
+ /* Icons */
+
+ .icons {
+     padding: 30px;
+ }
+
+ .icons h3 {
+     font-weight: bold;
+     margin-bottom: 15px;
+ }
+
+ .icons i {
+     background-color:  #15afca;
+     color: #fff;
+     padding: 1rem;
+     border-radius: 50%;
+     margin-bottom: 15px;
+ }
+
+ .column-2 h2 {
+     color: #fff;
+ }
+
+ .cases img:hover {
+     opacity: 0.7;
+     
+ }
+
+ /* Call */
+
+ .callback-form {
+     width: 100%;
+     padding: 20px 0;
+}
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+    margin-bottom: 15px;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+}
+
+.callback-form .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+    border-radius: 1;
+}
+
+.callback-form input:focus {
+    outline-color: rgb(9, 221, 62) ;
+}
+
+/* BPost */
+
+.post {
+    padding: 50ox 30px;
+
+}
+
+.post h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+.post meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color:  rgb(9, 221, 62);
+}
+
+.footer .social > * {
+    margin-right: 30px;
+
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
